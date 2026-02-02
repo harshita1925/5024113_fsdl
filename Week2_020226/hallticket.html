@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex College Hall Ticket</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+          
+           
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .logo {
+            width: 120px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        h1 {
+            margin: 10px 0;
+            font-size: 2em;
+        }
+        .exam-year {
+            font-weight: bold;
+                    }
+        .student-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .student-details {
+            flex: 1;
+        }
+        .student-photo {
+            flex: 0 0 150px;
+            text-align: center;
+        }
+        .student-photo img {
+            width: 120px;
+            height: 150px;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+           
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+        
+        }
+        .footer {
+            border-top: 2px solid #007bff;
+            padding-top: 20px;
+            text-align: center;
+        }
+        .signature {
+            margin-top: 20px;
+        }
+        .signature img {
+            width: 200px;
+            height: auto;
+            margin-top: 10px;
+        }
+        .instructions {
+            border: 1px ;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .print-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .print-btn:hover {
+        }
+        @media print {
+            .print-btn {
+                display: none;
+            }
+            body {
+            
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://via.placeholder.com/120x120?text=College+Logo" alt="College Logo" class="logo">
+            <h1>ABC College Hall Ticket</h1>
+            <p class="exam-year">Exam Year: 2026</p>
+        </div>
+
+        <div class="student-info">
+            <div class="student-details">
+                <table>
+                    <tr>
+                        <th>Student Name:</th>
+                        <td>John Doe</td>
+                    </tr>
+                    <tr>
+                        <th>Roll Number:</th>
+                        <td>123456</td>
+                    </tr>
+                    <tr>
+                        <th>Course:</th>
+                        <td>Bachelor of Science in Computer Science</td>
+                    </tr>
+                    <tr>
+                        <th>Semester:</th>
+                        <td>4th Semester</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="student-photo">
+                <img src="https://via.placeholder.com/120x150?text=Student+Photo" alt="Student Photo">
+                <p><strong>Photo</strong></p>
+            </div>
+        </div>
+
+        <table>
+            <tr>
+                <th>Exam Subject:</th>
+                <td>Data Structures and Algorithms</td>
+            </tr>
+            <tr>
+                <th>Date:</th>
+                <td>January 20, 2026</td>
+            </tr>
+            <tr>
+                <th>Time:</th>
+                <td>10:00 AM - 12:00 PM</td>
+            </tr>
+            <tr>
+                <th>Venue:</th>
+                <td>Room 101, Main Building</td>
+            </tr>
+            <tr>
+                <th>Invigilator:</th>
+                <td>Dr. Jane Smith</td>
+            </tr>
+        </table>
+
+        <div class="instructions">
+            <h3>Important Instructions:</h3>
+            <ul>
+                <li>Bring your ID card and pen. No electronic devices allowed.</li>
+                <li>Arrive 30 minutes before the exam starts.</li>
+                <li>Follow all exam rules and regulations.</li>
+                <li>In case of any discrepancy, contact the exam office immediately.</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p><strong>College Address:</strong> 123 College Street, City, State, ZIP</p>
+            <p><strong>Contact:</strong> exam@abccollege.edu | +1-234-567-8900</p>
+            <div class="signature">
+                <p><strong>Authorized Signature:</strong></p>
+                <img src="https://via.placeholder.com/200x50?text=Signature" alt="Authorized Signature">
+            </div>
+        </div>
+
+        <button class="print-btn" onclick="window.print()">Print Hall Ticket</button>
+    </div>
+</body>
+</html>
