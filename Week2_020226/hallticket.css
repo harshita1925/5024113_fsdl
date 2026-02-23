@@ -1,3 +1,4 @@
+/* General Body Styling */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -5,15 +6,17 @@ body {
   background-color: #f2f2f2;
 }
 
+/* Main Container */
 .container {
   max-width: 800px;
-  margin: auto;
+  margin: 20px auto; /* Added top margin for better spacing */
   background-color: #ffffff;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Header Section */
 .header {
   text-align: center;
   border-bottom: 2px solid #007bff;
@@ -21,42 +24,52 @@ body {
   margin-bottom: 20px;
 }
 
+/* Logo */
 .logo {
   width: 120px;
   margin-bottom: 10px;
 }
 
+/* Heading */
 h1 {
   margin: 10px 0;
   color: #007bff;
 }
 
+/* Exam Year */
 .exam-year {
   font-weight: bold;
 }
 
+/* Student Info Section */
 .student-info {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start; /* Added alignment fix */
   margin-bottom: 20px;
 }
 
+/* Student Details */
 .student-details {
   width: 65%;
 }
 
+/* Student Photo Section */
 .student-photo {
   width: 30%;
   text-align: center;
 }
 
+/* Student Photo Image */
 .student-photo img {
   width: 120px;
   height: 150px;
   border: 2px solid #007bff;
   border-radius: 5px;
+  object-fit: cover; /* Prevents image distortion */
 }
 
+/* Table Styling */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -73,10 +86,12 @@ th {
   background-color: #f0f8ff;
 }
 
+/* Zebra Striping */
 tr:nth-child(even) {
   background-color: #f9f9f9;
 }
 
+/* Instructions Box */
 .instructions {
   border: 1px solid #007bff;
   padding: 10px;
@@ -84,17 +99,20 @@ tr:nth-child(even) {
   background-color: #f8fbff;
 }
 
+/* Footer */
 .footer {
   border-top: 2px solid #007bff;
   padding-top: 20px;
   text-align: center;
 }
 
+/* Signature Image */
 .signature img {
   width: 200px;
   margin-top: 10px;
 }
 
+/* Print Button */
 .print-btn {
   display: block;
   margin: 20px auto;
@@ -105,17 +123,26 @@ tr:nth-child(even) {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
 .print-btn:hover {
   background-color: #0056b3;
 }
 
+/* Print Media Query */
 @media print {
   .print-btn {
     display: none;
   }
+
   body {
     background-color: white;
+    padding: 0;
+  }
+
+  .container {
+    box-shadow: none;
+    margin: 0;
   }
 }
