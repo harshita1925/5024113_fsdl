@@ -21,12 +21,8 @@ function App() {
 
     
 
-      <ClassComponent
-        storeName="Tech Store"
-        location="Hyderabad"
-        rating="4.5"
-      />
-
+      <EventExample />
+      
     </div>
   );
 }
