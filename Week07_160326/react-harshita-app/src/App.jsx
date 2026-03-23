@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "./App.css";
 
-import FunctionComponent from "./components/FunctionComponent";
-import ClassComponent from "./components/ClassComponent";
-import EventExample from "./components/EventExample";
-import FormExample from "./components/FormExample";
+import FunctionComponent from "./components/functioncomponent";
+import ClassComponent from "./components/classcomponent";
+import EventExample from "./components/eventexample";
+import FormExample from "./components/formexample";
 
 function App() {
   const [clicks, setClicks] = useState(0);
