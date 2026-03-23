@@ -19,7 +19,19 @@ function App() {
 
       <hr />
 
-    
+      <FunctionComponent
+        productName="Laptop"
+        price="50000"
+        brand="Dell"
+      />
+
+      <ClassComponent
+        storeName="Tech Store"
+        location="Hyderabad"
+        rating="4.5"
+      />
+
+      <EventExample />
       <FormExample />
     </div>
   );
