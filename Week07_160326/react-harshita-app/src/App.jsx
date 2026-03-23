@@ -20,9 +20,7 @@ function App() {
       <hr />
 
     
-
-      <EventExample />
-      
+      <FormExample />
     </div>
   );
 }
